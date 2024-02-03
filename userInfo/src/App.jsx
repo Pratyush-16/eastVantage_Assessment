@@ -33,20 +33,25 @@ function App() {
   
 
   return (
-    <>
-     <h1>User Info</h1>
-
-     {userData ? (
+    <div className="text-center my-8">
+      <h1 className='text text-6xl  my-8'>User Info</h1>
+      {userData ? (
         <div>
-          <h1>{`${userData.name.title} ${userData.name.first} ${userData.name.last}`}</h1>
-          <p>Email: {userData.email}</p>
+          <h1 className="text-4xl font-bold mb-2">
+            {`${userData.name.title} ${userData.name.first} ${userData.name.last}`}
+          </h1>
+          <p className="text-gray-600">Email: {userData.email}</p>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p className="text-gray-600">Loading...</p>
       )}
-      <button onClick={handleRefresh}>Refresh</button>
-    
-    </>
+      <button
+        onClick={handleRefresh}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+      >
+        Refresh
+      </button>
+    </div>
   )
 }
 
