@@ -19,7 +19,7 @@ This React application fetches and displays a random user's full name and email 
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/random-user-display-app.git
+   git clone https://github.com/Pratyush-16/eastVantage_Assessment.git
 
 2. Run the project:
    
